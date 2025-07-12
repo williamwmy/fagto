@@ -49,11 +49,23 @@ const PlayerReveal: React.FC<PlayerRevealProps> = ({
     }, 1000);
   };
 
+  // Dynamic font size based on word length
+  const getWordFontSize = (word: string) => {
+    if (word.length <= 4) return '3rem';
+    if (word.length <= 6) return '2.5rem';
+    if (word.length <= 8) return '2rem';
+    return '1.6rem';
+  };
+
   return (
     <div className="player-reveal">
       <div className="player-info">
         <h2>Spiller {playerNumber} av {totalPlayers}</h2>
         <p className="category">Kategori: {category}</p>
+      </div>
+
+      <div className="instruction-outside">
+        <p>Hold fingeren på boksen for å se din rolle</p>
       </div>
 
       <div 
@@ -63,11 +75,7 @@ const PlayerReveal: React.FC<PlayerRevealProps> = ({
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
       >
-        {!isRevealed ? (
-          <div className="instruction">
-            <p>Hold fingeren på skjermen for å se din rolle</p>
-          </div>
-        ) : (
+        {isRevealed && (
           <div className="role-display">
             {player.isFakeArtist ? (
               <div className="fake-artist">
@@ -78,7 +86,12 @@ const PlayerReveal: React.FC<PlayerRevealProps> = ({
             ) : (
               <div className="real-artist">
                 <h1>Du er en ekte kunstner!</h1>
-                <div className="word">{player.word}</div>
+                <div 
+                  className="word" 
+                  style={{ fontSize: getWordFontSize(player.word || '') }}
+                >
+                  {player.word}
+                </div>
                 <p>Tegn dette ordet</p>
               </div>
             )}
@@ -86,11 +99,9 @@ const PlayerReveal: React.FC<PlayerRevealProps> = ({
         )}
       </div>
 
-      {!isRevealed && (
-        <div className="next-instruction">
-          <p>Løft fingeren når du har sett din rolle</p>
-        </div>
-      )}
+      <div className="next-instruction">
+        <p>Løft fingeren når du har sett din rolle</p>
+      </div>
     </div>
   );
 };
