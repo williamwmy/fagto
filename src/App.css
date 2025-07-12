@@ -9,12 +9,16 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #ff6b9d, #ffd93d);
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   touch-action: manipulation;
+  position: fixed;
+  width: 100%;
 }
 
 #root {
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .loading, .error {
