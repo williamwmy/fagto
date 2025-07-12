@@ -57,11 +57,20 @@ const PlayerReveal: React.FC<PlayerRevealProps> = ({
     return '1.6rem';
   };
 
+  // Dynamic font size for category text
+  const getCategoryFontSize = (category: string) => {
+    if (category.length <= 6) return '1.2rem';
+    if (category.length <= 10) return '1.1rem';
+    return '1rem';
+  };
+
   return (
     <div className="player-reveal">
       <div className="player-info">
         <h2>Spiller {playerNumber} av {totalPlayers}</h2>
-        <p className="category">Kategori: {category}</p>
+        <p className="category" style={{ fontSize: getCategoryFontSize(category) }}>
+          Kategori: {category}
+        </p>
       </div>
 
       <div className="instruction-outside">
