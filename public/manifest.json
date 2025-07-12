@@ -1,0 +1,26 @@
+{
+  "name": "Fake Artist Goes to Oslo",
+  "short_name": "Fake Artist",
+  "description": "Digital versjon av brettspillet Fake Artist Goes to New York",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ff6b9d",
+  "theme_color": "#ff6b9d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "no"
+}

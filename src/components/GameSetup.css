@@ -1,0 +1,76 @@
+.game-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6b9d, #ffd93d);
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.player-selection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.player-selection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.player-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 300px;
+}
+
+.player-btn {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.player-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.player-btn.active {
+  background: white;
+  color: #ff6b9d;
+  transform: scale(1.1);
+}
+
+.start-btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #ff6b9d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
