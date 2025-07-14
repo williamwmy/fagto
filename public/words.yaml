@@ -31,37 +31,207 @@ categories:
     - fårikål
     - ku
   
-  ting:
+  møbler:
     - stol
     - bord
-    - bil
-    - sykkel
-    - bok
-    - penn
-    - telefon
-    - datamaskin
-    - kopp
-    - tallerken
-    - klokke
-    - briller
-    - sko
-    - jakke
-    - paraply
-    - nøkkel
+    - sofa
+    - seng
+    - skap
+    - kommode
+    - hylle
+    - benk
+    - pute
+    - teppe
     - lampe
     - speil
-    - kamera
-    - gitar
-    - piano
-    - ball
-    - dukke
+    - gardin
+    - bilde
+    - vase
+
+  transportmidler:
+    - bil
+    - sykkel
     - tog
     - fly
     - båt
+    - buss
+    - motorsykkel
+    - skateboard
+    - rulleskøyter
+    - sparkesykkel
+    - taxi
+    - lastebil
+    - helikopter
+    - ubåt
+    - rakkett
+
+  elektronikk:
+    - telefon
+    - datamaskin
+    - kamera
+    - fjernsyn
+    - radio
+    - høyttaler
+    - mikrofon
+    - spillkonsoll
+    - tablet
+    - klokke
+    - kalkulator
+    - projektor
+    - skriver
+    - mus
+    - tastatur
+
+  klær_og_tilbehør:
+    - sko
+    - jakke
+    - briller
+    - paraply
+    - hatt
+    - hansker
+    - skjerf
+    - belte
+    - sokker
+    - bukse
+    - skjorte
+    - kjole
+    - veske
+    - smykker
+    - solbriller
+
+  kjøkkenting:
+    - kopp
+    - tallerken
+    - kniv
+    - gaffel
+    - skje
+    - gryte
+    - panne
+    - glass
+    - bolle
+    - kanne
+    - termos
+    - mikrobølgeovn
+    - kjøleskap
+    - komfyr
+    - oppvaskmaskin
+
+  skole_og_kontor:
+    - bok
+    - penn
+    - blyant
+    - viskelær
+    - linjal
+    - saks
+    - kalkulator
+    - mappe
+    - notatblokk
+    - tavle
+    - pulpit
+    - skrivebord
+    - stempel
+    - clips
+    - hefter
+
+  musikkinstrumenter:
+    - gitar
+    - piano
+    - trommer
+    - fiolin
+    - fløyte
+    - saksofon
+    - trompet
+    - harmonika
+    - harpe
+    - cello
+    - kontrabass
+    - triangel
+    - tamburin
+    - cymbaler
+    - orgel
+
+  leker_og_sport:
+    - ball
+    - dukke
+    - legokloss
+    - bamse
+    - puslespill
+    - yoyo
+    - racket
+    - hoppetau
+    - frisbee
+    - skateboard
+    - skøyter
+    - ski
+    - sykkel
+    - sparkesykkel
+    - badmintonracket
+
+  hverdagsgjenstander:
+    - nøkkel
+    - klokke
+    - lommebok
+    - kam
+    - tannbørste
+    - såpe
+    - håndkle
+    - toalettpapir
+    - lysestake
+    - stearinlys
+    - fyrstikker
+    - lighter
+    - flaske
+    - kork
+    - kurv
+
+  natur_og_bygninger:
     - hus
     - tre
     - blomst
     - sol
+    - måne
+    - stjerne
+    - sky
+    - fjell
+    - stein
+    - sand
+    - snø
+    - is
+    - regn
+    - vind
+    - bro
+
+  eventyr_og_fantasi:
+    - drage
+    - enhjørning
+    - alv
+    - dverg
+    - troll
+    - heks
+    - trollmann
+    - prinsesse
+    - prins
+    - konge
+    - dronning
+    - slott
+    - krone
+    - sverd
+    - skjold
+    - tryllestav
+    - krystallkule
+    - flyvende teppe
+    - syvmilsstøvler
+    - ønskebånn
+    - skattekiste
+    - ønskekvist
+    - magisk ring
+    - usynlighetskappe
+    - feer
+    - nymfer
+    - kentaur
+    - feniks
+    - griff
+    - pegasus
   
   aktiviteter:
     - svømme
