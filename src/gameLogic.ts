@@ -4,6 +4,10 @@ export const getRandomElement = <T>(array: T[]): T => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
+export const formatCategoryName = (category: string): string => {
+  return category.replace(/_/g, ' ');
+};
+
 export const initializeGame = (playerCount: number, wordData: WordData): GameState => {
   const fakeArtistIndex = Math.floor(Math.random() * playerCount);
   const categories = Object.keys(wordData.categories);

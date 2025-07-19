@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatCategoryName } from '../gameLogic';
 import './GameStart.css';
 
 interface GameStartProps {
@@ -24,7 +25,7 @@ const GameStart: React.FC<GameStartProps> = ({ category, onNewGame }) => {
         
         <div className="category-display">
           <p>Kategori:</p>
-          <h2 {...getCategoryProps(category)}>{category}</h2>
+          <h2 {...getCategoryProps(category)}>{formatCategoryName(category)}</h2>
         </div>
         
         <div className="drawing-instruction">

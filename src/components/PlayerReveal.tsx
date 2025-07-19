@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import type { Player } from '../types';
+import { formatCategoryName } from '../gameLogic';
 import './PlayerReveal.css';
 
 interface PlayerRevealProps {
@@ -69,7 +70,7 @@ const PlayerReveal: React.FC<PlayerRevealProps> = ({
       <div className="player-info">
         <h2>Spiller {playerNumber} av {totalPlayers}</h2>
         <p className="category" style={{ fontSize: getCategoryFontSize(category) }}>
-          Kategori: {category}
+          Kategori: {formatCategoryName(category)}
         </p>
       </div>
 
