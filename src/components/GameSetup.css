@@ -75,3 +75,15 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
+
+.version-info {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8rem;
+  color: #999;
+  opacity: 0.7;
+  font-family: monospace;
+  user-select: none;
+  pointer-events: none;
+}

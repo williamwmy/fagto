@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './GameSetup.css';
+import packageJson from '../../package.json';
 
 interface GameSetupProps {
   onStartGame: (playerCount: number) => void;
@@ -34,6 +35,10 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStartGame }) => {
       <button className="start-btn" onClick={handleStartGame}>
         Start spill
       </button>
+      
+      <div className="version-info">
+        v{packageJson.version}
+      </div>
     </div>
   );
 };

@@ -7,6 +7,16 @@ interface GameStartProps {
 }
 
 const GameStart: React.FC<GameStartProps> = ({ category, onNewGame }) => {
+  const getCategoryProps = (categoryName: string) => {
+    const length = categoryName.length;
+    if (length > 15) {
+      return { 'data-very-long': true };
+    } else if (length > 12) {
+      return { 'data-long': true };
+    }
+    return {};
+  };
+
   return (
     <div className="game-start">
       <div className="instruction-card">
@@ -14,7 +24,7 @@ const GameStart: React.FC<GameStartProps> = ({ category, onNewGame }) => {
         
         <div className="category-display">
           <p>Kategori:</p>
-          <h2>{category}</h2>
+          <h2 {...getCategoryProps(category)}>{category}</h2>
         </div>
         
         <div className="drawing-instruction">

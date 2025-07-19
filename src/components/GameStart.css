@@ -46,6 +46,28 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.2;
+}
+
+/* Responsive font size for long category names */
+@media (max-width: 500px) {
+  .category-display h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* Scale down font size for very long category names */
+.category-display h2[data-long] {
+  font-size: 2rem;
+}
+
+.category-display h2[data-very-long] {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 .drawing-instruction h3 {
